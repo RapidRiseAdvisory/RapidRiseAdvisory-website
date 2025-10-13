@@ -1,126 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - RapidRise Advisory</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .container {
+        max-width: 90%;
+      }
+      @media (min-width: 768px) {
         .container {
-            max-width: 90%;
+          max-width: 768px;
         }
-        @media (min-width: 768px) {
-            .container {
-                max-width: 768px;
-            }
-        }
+      }
     </style>
-</head>
-<body class="bg-slate-50 text-gray-800">
 
+    <script src="main.js"></script>
+  </head>
+  <body class="bg-slate-50 text-gray-800">
     <!-- Header Section -->
-    <header class="bg-white shadow-sm py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="Gemini_Generated_Image_93x1f093x1f093x1.jpg" alt="RapidRise Advisory Logo" class="h-10">
-            </a>
-            <nav class="flex items-center space-x-2">
-                <a href="index.html" class="nav-link text-gray-600 hover:text-white px-3 py-2 rounded-lg transition duration-300">Home</a>
-                <a href="services.html" class="nav-link text-gray-600 hover:text-white px-3 py-2 rounded-lg transition duration-300">Services</a>
-                <a href="about.html" class="nav-link text-gray-600 hover:text-white px-3 py-2 rounded-lg transition duration-300">About</a>
-                <a href="faq.html" class="nav-link text-gray-600 hover:text-white px-3 py-2 rounded-lg transition duration-300">FAQ</a>
-                <a href="#contact" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">Contact Us</a>
-            </nav>
-        </div>
+    <header class="bg-green-100 shadow-sm py-2">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-3">
+          <img
+            src="images/Gemini_Generated_Image_93x1f093x1f093x1.jpg"
+            alt="RapidRise Advisory Logo"
+            class="h-20 w-auto"
+          />
+          <span class="text-2xl font-bold text-slate-800"
+            >RapidRise Advisory</span
+          >
+        </a>
+        <nav class="flex items-center space-x-2">
+          <a
+            href="index.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 font-semibold"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 font-semibold"
+            >Services</a
+          >
+          <a
+            href="about.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 font-semibold"
+            >About</a
+          >
+          <a
+            href="faq.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 font-semibold"
+            >FAQ</a
+          >
+          <a
+            href="#contact"
+            class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300 font-semibold"
+            >Contact Us</a
+          >
+        </nav>
+      </div>
     </header>
 
     <main class="py-12">
-        <!-- Services Section -->
-        <section class="container mx-auto px-4 py-16">
-            <h1 class="text-4xl font-bold text-center text-green-700 mb-12">Our Services</h1>
-            <div class="max-w-4xl mx-auto space-y-8">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Go-To-Market (GTM) Strategy</h2>
-                    <p class="text-gray-600">
-                        Design and execute effective GTM strategies that align sales, marketing, and business development to capture new market opportunities and accelerate revenue.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Sales Performance & Operations</h2>
-                    <p class="text-gray-600">
-                        Optimize sales processes, enhance team performance, and build scalable sales operations to improve conversion rates and drive consistent growth.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Marketing & Customer Retention</h2>
-                    <p class="text-gray-600">
-                        Align marketing and sales efforts, improve lead generation, and implement strategies to strengthen customer relationships and increase client retention.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Leadership & Mentorship</h2>
-                    <p class="text-gray-600">
-                        Provide hands-on coaching and mentorship to sales and marketing leaders, helping them refine their skills and drive their teams to success.
-                    </p>
-                </div>
-            </div>
-        </section>
+      <!-- Services Section -->
+      <section class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold text-center text-green-700 mb-12">
+          Our Services
+        </h1>
+        <div class="max-w-4xl mx-auto space-y-8">
+          <div
+            class="bg-white p-8 rounded-lg shadow-md border-2 border-green-100"
+          >
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">
+              Go-To-Market (GTM) Strategy
+            </h2>
+            <p class="text-gray-600">
+              Design and execute effective GTM strategies that align sales,
+              marketing, and business development to capture new market
+              opportunities and accelerate revenue.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-md border-2 border-green-100"
+          >
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">
+              Sales Performance & Operations
+            </h2>
+            <p class="text-gray-600">
+              Optimize sales processes, enhance team performance, and build
+              scalable sales operations to improve conversion rates and drive
+              consistent growth.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-md border-2 border-green-100"
+          >
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">
+              Marketing & Customer Retention
+            </h2>
+            <p class="text-gray-600">
+              Align marketing and sales efforts, improve lead generation, and
+              implement strategies to strengthen customer relationships and
+              increase client retention.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-md border-2 border-green-100"
+          >
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">
+              Leadership & Mentorship
+            </h2>
+            <p class="text-gray-600">
+              Provide hands-on coaching and mentorship to sales and marketing
+              leaders, helping them refine their skills and drive their teams to
+              success.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-slate-50">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl font-bold text-slate-800 mb-4">Ready to Scale Smarter?</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-                    Let's connect and discuss how our fractional CRO services can help your business achieve its growth goals.
-                </p>
-                <form class="max-w-xl mx-auto space-y-4">
-                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300">
-                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300">
-                    <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"></textarea>
-                    <button type="submit" class="w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold text-slate-800 mb-4">
+            Ready to Scale Smarter?
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            Let's connect and discuss how our fractional CRO services can help
+            your business achieve its growth goals.
+          </p>
+          <form
+            action="https://formspree.io/f/manpnbqe"
+            method="POST"
+            class="max-w-xl mx-auto space-y-4"
+          >
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              required
+              class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Your Email"
+              class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+            />
+            <textarea
+              name="message"
+              required
+              placeholder="Your Message"
+              rows="4"
+              class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer Section -->
     <footer class="bg-gray-900 text-gray-400 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; <span id="current-year">2025</span> RapidRise Advisory. All rights reserved.</p>
-        </div>
+      <div class="container mx-auto px-4 text-center">
+        <p>
+          &copy; <span id="current-year">2025</span> RapidRise Advisory. All
+          rights reserved.
+        </p>
+      </div>
     </footer>
 
     <!-- JavaScript to automatically update the year -->
     <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentPage = window.location.pathname.split('/').pop();
-            const navLinks = document.querySelectorAll('nav a');
-            
-            navLinks.forEach(link => {
-                const linkPath = link.href.split('/').pop();
-                if (linkPath === currentPage) {
-                    link.classList.remove('text-gray-600');
-                    link.classList.add('bg-green-600', 'text-white');
-                } else {
-                    link.classList.remove('bg-green-600', 'text-white');
-                    link.classList.add('text-gray-600');
-                }
-            });
-        });
-    </script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPage = window.location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll(
+          'nav a:not([href="#contact"])'
+        );
 
-</body>
+        navLinks.forEach((link) => {
+          const linkPath = link.href.split("/").pop();
+          if (linkPath === currentPage) {
+            link.classList.remove("text-gray-600");
+            link.classList.add("text-green-700", "font-bold");
+          } else {
+            link.classList.remove("text-green-700", "font-bold");
+            link.classList.add("text-gray-600");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
