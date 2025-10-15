@@ -41,3 +41,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const navLinks = document.querySelectorAll('nav a:not([href="#contact"])');
+
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+
+    if (linkPath === currentPage) {
+      link.classList.remove("text-gray-600");
+      link.classList.add("text-green-700", "font-bold");
+    } else {
+      link.classList.remove("text-green-700", "font-bold");
+      link.classList.add("text-gray-600");
+    }
+  });
+});
