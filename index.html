@@ -383,8 +383,10 @@
         const currentUrl = window.location.href;
         const currentPath = window.location.pathname;
 
-        // Get just the filename from the current path
-        const currentPage = currentPath.split("/").pop() || "index.html";
+        // Get just the filename from the current path, remove .html if present
+        let currentPage = currentPath.split("/").pop() || "index";
+        if (currentPage === "") currentPage = "index";
+        currentPage = currentPage.replace(".html", "");
 
         console.log("Current URL:", currentUrl);
         console.log("Current Path:", currentPath);
@@ -397,8 +399,9 @@
             return;
           }
 
-          // Get the filename from the link's href
-          const linkHref = link.getAttribute("href");
+          // Get the filename from the link's href, remove .html if present
+          let linkHref = link.getAttribute("href");
+          linkHref = linkHref.replace(".html", "");
           console.log("Checking link:", linkHref);
 
           // Reset styling
