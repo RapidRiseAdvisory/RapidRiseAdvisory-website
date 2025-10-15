@@ -31,7 +31,7 @@
       }
     </style>
 
-    <script src="/main.js"></script>
+    <script src="main.js"></script>
   </head>
   <body class="bg-slate-50 text-gray-800">
     <!-- Header Section -->
@@ -201,6 +201,39 @@
     <script>
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
+    </script>
+
+    <!-- Active page highlighting -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentUrl = window.location.href;
+        const currentPath = window.location.pathname;
+
+        console.log("Current URL:", currentUrl);
+        console.log("Current Path:", currentPath);
+
+        const navLinks = document.querySelectorAll("nav a");
+
+        navLinks.forEach((link) => {
+          if (link.href.includes("contact")) {
+            return;
+          }
+
+          console.log("Checking link:", link.href);
+
+          link.style.color = "#4b5563";
+          link.style.fontWeight = "normal";
+
+          if (
+            currentUrl.includes(link.href) ||
+            link.href.includes(currentPath)
+          ) {
+            link.style.color = "#15803d";
+            link.style.fontWeight = "bold";
+            console.log("✅ Active page found:", link.href);
+          }
+        });
+      });
     </script>
   </body>
 </html>

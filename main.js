@@ -41,28 +41,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-// Active page highlighting - Simple class toggle
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
-
-  // Remove active class from all nav links first
-  document.querySelectorAll("nav a").forEach((link) => {
-    link.classList.remove("active");
-  });
-
-  // Add active class to current page
-  document.querySelectorAll("nav a").forEach((link) => {
-    const href = link.getAttribute("href");
-
-    // Skip contact button
-    if (href && href.includes("contact")) {
-      return;
-    }
-
-    // Check if this is the current page
-    if (href === currentPage) {
-      link.classList.add("active");
-    }
-  });
-});
