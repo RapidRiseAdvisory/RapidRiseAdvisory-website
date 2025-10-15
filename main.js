@@ -42,24 +42,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+// Active page highlighting - Simple and reliable
+document.addEventListener("DOMContentLoaded", function () {
   // Get current page name
   const path = window.location.pathname;
-  const currentPage = path.split('/').pop() || 'index.html';
-  
-  // Find all nav links except contact button
-  const navLinks = document.querySelectorAll('nav a:not([href="#contact"])');
-  
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    
+  const currentPage = path.split("/").pop() || "index.html";
+
+  // Find all nav links except contact button (updated selector)
+  const navLinks = document.querySelectorAll('nav a:not([href*="contact"])');
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+
     // Check if this is the current page
     if (href === currentPage) {
-      link.style.color = '#15803d'; // green-700
-      link.style.fontWeight = 'bold';
+      link.style.color = "#15803d"; // green-700
+      link.style.fontWeight = "bold";
     } else {
-      link.style.color = '#4b5563'; // gray-600
-      link.style.fontWeight = 'normal';
+      link.style.color = "#4b5563"; // gray-600
+      link.style.fontWeight = "normal";
     }
   });
+
+  // Ensure Contact Us button keeps its original styling
+  const contactButton = document.querySelector('nav a[href*="contact"]');
+  if (contactButton) {
+    contactButton.style.color = "white";
+    contactButton.style.fontWeight = "normal";
+  }
 });
