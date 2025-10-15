@@ -42,39 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Active page highlighting - works on both localhost and live domain
-document.addEventListener("DOMContentLoaded", function () {
-  // Get current page - handle both localhost and live domain
-  let currentPage = window.location.pathname.split("/").pop();
-
-  // Handle cases where pathname might be empty or just "/"
-  if (!currentPage || currentPage === "") {
-    currentPage = "index.html";
-  }
-
-  // Remove any trailing slashes or query parameters
-  currentPage = currentPage.split("?")[0].split("#")[0];
-
-  console.log("Current page detected:", currentPage); // Debug
-
+document.addEventListener('DOMContentLoaded', function() {
+  // Get current page name
+  const path = window.location.pathname;
+  const currentPage = path.split('/').pop() || 'index.html';
+  
+  // Find all nav links except contact button
   const navLinks = document.querySelectorAll('nav a:not([href="#contact"])');
-
-  navLinks.forEach((link) => {
-    let linkPath = link.getAttribute("href");
-
-    // Clean up the link path
-    linkPath = linkPath.split("?")[0].split("#")[0];
-
-    console.log("Checking link:", linkPath, "against:", currentPage); // Debug
-
-    // Check if this link matches the current page
-    if (linkPath === currentPage) {
-      link.classList.remove("text-gray-600");
-      link.classList.add("text-green-700", "font-bold");
-      console.log("✅ Active page found:", linkPath); // Debug
+  
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    
+    // Check if this is the current page
+    if (href === currentPage) {
+      link.style.color = '#15803d'; // green-700
+      link.style.fontWeight = 'bold';
     } else {
-      link.classList.remove("text-green-700", "font-bold");
-      link.classList.add("text-gray-600");
+      link.style.color = '#4b5563'; // gray-600
+      link.style.fontWeight = 'normal';
     }
   });
 });
