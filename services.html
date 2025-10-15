@@ -209,8 +209,12 @@
         const currentUrl = window.location.href;
         const currentPath = window.location.pathname;
 
+        // Get just the filename from the current path
+        const currentPage = currentPath.split("/").pop() || "index.html";
+
         console.log("Current URL:", currentUrl);
         console.log("Current Path:", currentPath);
+        console.log("Current Page:", currentPage);
 
         const navLinks = document.querySelectorAll("nav a");
 
@@ -219,18 +223,19 @@
             return;
           }
 
-          console.log("Checking link:", link.href);
+          // Get the filename from the link's href
+          const linkHref = link.getAttribute("href");
+          console.log("Checking link:", linkHref);
 
+          // Reset styling
           link.style.color = "#4b5563";
           link.style.fontWeight = "normal";
 
-          if (
-            currentUrl.includes(link.href) ||
-            link.href.includes(currentPath)
-          ) {
+          // Check if this link matches the current page
+          if (linkHref === currentPage) {
             link.style.color = "#15803d";
             link.style.fontWeight = "bold";
-            console.log("✅ Active page found:", link.href);
+            console.log("✅ Active page found:", linkHref);
           }
         });
       });
