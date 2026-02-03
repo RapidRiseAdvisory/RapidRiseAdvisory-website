@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -34,9 +34,24 @@
         }
       }
 
+      .nav-link {
+        background-color: transparent;
+        border: 2px solid #d1d5db; /* gray-300 */
+        color: #4b5563; /* gray-600 */
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .nav-link:hover {
+        border-color: #15803d; /* green-700 */
+        color: #15803d;
+      }
+
       .nav-link.active {
-        color: #15803d !important; /* green-700 */
-        font-weight: bold !important;
+        background-color: #1e3a8a !important; /* navy blue-900 */
+        border-color: #1e3a8a !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
       }
     </style>
     <script src="main.js"></script>
@@ -90,7 +105,7 @@
       <section
         class="text-center py-[200px] relative bg-cover bg-center bg-no-repeat"
         style="
-          background-image: url('images/rapidrise_background_high_quality.webp');
+          background-image: url(&quot;images/rapidrise_background_high_quality.webp&quot;);
         "
       >
         <div class="absolute inset-0 bg-black bg-opacity-20"></div>
@@ -123,7 +138,7 @@
       <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-green-700 text-center mb-12">
-            Commercialising Real Assets
+            Critical Infrastructure & Hard Tech
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <!-- Commercial Structuring -->
@@ -164,6 +179,121 @@
               <p class="text-gray-600 leading-relaxed">
                 Positioning British and European technology as strategic
                 capability to win defence and government contracts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How I Work Section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-5xl">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-4"
+          >
+            How I Work
+          </h2>
+          <p
+            class="text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
+          >
+            I turn pilots into bankable projects by aligning contracts, capital,
+            and risk requirements.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Commercial Reality Check -->
+            <div
+              class="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-lg shadow-lg border-l-4 border-green-600"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mb-3">
+                  Commercial Reality Check
+                </h3>
+              </div>
+              <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+                What exactly must be true for this to be financeable and
+                contractable at scale.
+              </p>
+            </div>
+
+            <!-- Contract Architecture -->
+            <div
+              class="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-lg shadow-lg border-l-4 border-green-600"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mb-3">
+                  Contract Architecture
+                </h3>
+              </div>
+              <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+                Power purchase agreements, offtake, joint ventures, and
+                counterparties. The aim is bankability, not just intent.
+              </p>
+            </div>
+
+            <!-- Capital Readiness -->
+            <div
+              class="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-lg shadow-lg border-l-4 border-green-600"
+            >
+              <div class="mb-4">
+                <div
+                  class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mb-3">
+                  Capital Readiness
+                </h3>
+              </div>
+              <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+                I translate the story into what institutional investors and
+                lenders need to underwrite.
               </p>
             </div>
           </div>

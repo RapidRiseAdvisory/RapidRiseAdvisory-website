@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,9 +33,24 @@
           max-width: 768px;
         }
       }
+      .nav-link {
+        background-color: transparent;
+        border: 2px solid #d1d5db; /* gray-300 */
+        color: #4b5563; /* gray-600 */
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .nav-link:hover {
+        border-color: #15803d; /* green-700 */
+        color: #15803d;
+      }
+
       .nav-link.active {
-        color: #15803d !important; /* green-700 */
-        font-weight: bold !important;
+        background-color: #1e3a8a !important; /* navy blue-900 */
+        border-color: #1e3a8a !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
       }
     </style>
 
@@ -90,7 +105,7 @@
       <section
         class="py-16 bg-cover bg-center bg-no-repeat relative"
         style="
-          background-image: url('images/rapidrise_growth_journey_ultrawide_high_quality.webp');
+          background-image: url(&quot;images/rapidrise_growth_journey_ultrawide_high_quality.webp&quot;);
         "
       >
         <h1 class="text-4xl font-bold text-center text-green-700 mb-12">
@@ -149,6 +164,336 @@
               <strong>Focus:</strong> Commercial negotiation, Strategic Joint
               Ventures (JV), Supply chain integration.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRL Framework Section -->
+      <section class="py-16 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-green-700 mb-6 md:mb-8"
+          >
+            Where We Fit: The Commercialisation Gap (TRL 7-9)
+          </h2>
+
+          <div class="max-w-4xl mx-auto mb-10">
+            <p
+              class="text-base md:text-lg text-gray-700 leading-relaxed mb-4 text-center"
+            >
+              Many deep-tech firms excel at research (TRL 1-4) and prototyping
+              (TRL 5-6) but stall when entering the operational market.
+              RapidRise Advisory specialises in the critical transition from
+              <strong>Prototype to Profit</strong>.
+            </p>
+            <p
+              class="text-base md:text-lg text-gray-700 leading-relaxed text-center font-semibold"
+            >
+              We align your commercial maturity with your technical readiness.
+            </p>
+          </div>
+
+          <!-- TRL Framework Table -->
+          <div
+            class="overflow-x-auto shadow-xl rounded-lg border-2 border-green-700"
+          >
+            <table class="w-full bg-white">
+              <thead>
+                <tr class="bg-green-700 text-white">
+                  <th
+                    class="p-3 md:p-4 text-left text-sm md:text-base font-bold border-r border-white"
+                  >
+                    Technical Readiness Level (TRL)
+                  </th>
+                  <th
+                    class="p-3 md:p-4 text-left text-sm md:text-base font-bold border-r border-white"
+                  >
+                    The Commercial Challenge
+                  </th>
+                  <th
+                    class="p-3 md:p-4 text-left text-sm md:text-base font-bold"
+                  >
+                    How RapidRise Adds Value
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- TRL 1-5 -->
+                <tr class="border-b border-gray-200 bg-gray-50">
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-bold text-slate-800 text-sm md:text-base mb-1"
+                    >
+                      TRL 1-5
+                    </div>
+                    <div class="text-xs md:text-sm italic text-gray-600">
+                      (Concept to Component Validation)
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-semibold text-slate-800 text-sm md:text-base mb-2"
+                    >
+                      "Can we build it?"
+                    </div>
+                    <div class="text-xs md:text-sm text-gray-600">
+                      Focus is purely on R&D and feasibility. Funding is usually
+                      grant-based.
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4">
+                    <div class="text-xs md:text-sm text-gray-700">
+                      <strong>Strategic Advisory:</strong> We provide early
+                      market feedback to ensure you are not building a product
+                      nobody wants.
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- TRL 6 -->
+                <tr class="border-b border-gray-200 bg-white">
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-bold text-slate-800 text-sm md:text-base mb-1"
+                    >
+                      TRL 6
+                    </div>
+                    <div class="text-xs md:text-sm italic text-gray-600">
+                      (System Prototype in Relevant Environment)
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-semibold text-slate-800 text-sm md:text-base mb-2"
+                    >
+                      "Does it work?"
+                    </div>
+                    <div class="text-xs md:text-sm text-gray-600">
+                      The engineering works, but the product is often too
+                      complex or expensive for the market.
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4">
+                    <div class="text-xs md:text-sm text-gray-700">
+                      <strong>Value Translation:</strong> We begin translating
+                      technical specs into business benefits for future
+                      investors.
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- TRL 7 - THE RAPIDRISE ZONE -->
+                <tr
+                  class="border-b border-gray-200 bg-gradient-to-r from-blue-50 to-green-50"
+                >
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-bold text-green-800 text-sm md:text-base mb-1"
+                    >
+                      TRL 7
+                    </div>
+                    <div class="text-xs md:text-sm italic text-green-700">
+                      (System Prototype in Operational Environment)
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-semibold text-green-800 text-sm md:text-base mb-2"
+                    >
+                      "Who will buy it?"
+                    </div>
+                    <div class="text-xs md:text-sm text-gray-700">
+                      The "Valley of Death". You need pilot partners, but buyers
+                      view you as a risk.
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4">
+                    <div class="text-xs md:text-sm text-gray-800">
+                      <strong class="text-green-700"
+                        >Pilot Architecture:</strong
+                      >
+                      We secure paid pilot programmes by framing your prototype
+                      as a strategic advantage for early adopters.
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- TRL 8 - THE RAPIDRISE ZONE -->
+                <tr
+                  class="border-b border-gray-200 bg-gradient-to-r from-blue-50 to-green-50"
+                >
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-bold text-green-800 text-sm md:text-base mb-1"
+                    >
+                      TRL 8
+                    </div>
+                    <div class="text-xs md:text-sm italic text-green-700">
+                      (System Complete and Qualified)
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-semibold text-green-800 text-sm md:text-base mb-2"
+                    >
+                      "Is it safe?"
+                    </div>
+                    <div class="text-xs md:text-sm text-gray-700">
+                      Procurement teams block deals due to compliance,
+                      insurance, or integration risks.
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4">
+                    <div class="text-xs md:text-sm text-gray-800">
+                      <strong class="text-green-700"
+                        >Procurement Navigation:</strong
+                      >
+                      We handle the "non-technical" buyers (CFOs, CROs),
+                      managing the due diligence and approval process.
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- TRL 9 - THE RAPIDRISE ZONE -->
+                <tr class="bg-gradient-to-r from-blue-50 to-green-50">
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-bold text-green-800 text-sm md:text-base mb-1"
+                    >
+                      TRL 9
+                    </div>
+                    <div class="text-xs md:text-sm italic text-green-700">
+                      (Actual System Proven in Operation)
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4 border-r border-gray-200">
+                    <div
+                      class="font-semibold text-green-800 text-sm md:text-base mb-2"
+                    >
+                      "How do we scale?"
+                    </div>
+                    <div class="text-xs md:text-sm text-gray-700">
+                      The product works, but sales are founder-led and
+                      unrepeatable.
+                    </div>
+                  </td>
+                  <td class="p-3 md:p-4">
+                    <div class="text-xs md:text-sm text-gray-800">
+                      <strong class="text-green-700"
+                        >Revenue Engineering:</strong
+                      >
+                      We install the CRM, playbooks, and hiring standards to
+                      turn a founder-led sale into a scalable engine.
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="mt-10 text-center">
+            <p class="text-base md:text-lg text-gray-700 mb-4 font-semibold">
+              If you are at TRL 7-9 and struggling to bridge the gap between
+              working technology and institutional capital, we are your
+              commercial partner.
+            </p>
+            <a
+              href="#contact"
+              class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-base md:text-lg font-semibold hover:bg-green-700 transition duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Discuss Your TRL Transition
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive FAQ Section -->
+      <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-4xl font-bold text-green-700 text-center mb-12">
+            Frequently Asked Questions regarding Commercial Advisory
+          </h2>
+          <div class="space-y-6">
+            <!-- FAQ 1 -->
+            <div
+              class="bg-slate-50 p-8 rounded-lg shadow-md border-2 border-green-100"
+            >
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                How does RapidRise Advisory differ from a Placement Agent?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                We are not a broker-dealer or a placement agent. We do not
+                simply "shop" your pitch deck to investors. We are Commercial
+                Architects. We work with your executive team to restructure your
+                business model, contracts, and technical roadmap so that when
+                you do approach institutional capital, your project is deemed
+                "Bankable" rather than "Venture Risk".
+              </p>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div
+              class="bg-slate-50 p-8 rounded-lg shadow-md border-2 border-green-100"
+            >
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                At what TRL (Technology Readiness Level) do you engage?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                We specialise in the TRL 7 to 9 transition. This is often called
+                the "Valley of Death", where technology works in the lab but has
+                not yet achieved commercial scale. If you are at TRL 1-4 (R&D
+                focus), we are likely too late-stage for you. If you are
+                operational but cannot scale revenue, we are the perfect fit.
+              </p>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div
+              class="bg-slate-50 p-8 rounded-lg shadow-md border-2 border-green-100"
+            >
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                Do you work on a Success Fee basis?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                We work primarily on a retained advisory basis. Building
+                Sovereign Resilience and Critical Infrastructure requires deep
+                strategic work that cannot be aligned solely with a transaction
+                fee. We partner with founders who are serious about long-term
+                commercial structuring, not just a quick capital injection.
+              </p>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div
+              class="bg-slate-50 p-8 rounded-lg shadow-md border-2 border-green-100"
+            >
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                What sectors fall under "Hard Tech"?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                We focus on capital-intensive industries that require complex
+                physical deployment. This includes Marine & Renewable Energy,
+                Defence & Dual-Use Technology, Semiconductor Supply Chain, and
+                Advanced Manufacturing. We generally do not take on pure
+                software (SaaS) clients on the Advisory side.
+              </p>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div
+              class="bg-slate-50 p-8 rounded-lg shadow-md border-2 border-green-100"
+            >
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                Can you help us secure a Power Purchase Agreement (PPA) or
+                Government Contract?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Yes. This is often the primary barrier to funding. We assist in
+                structuring offtake agreements and government tenders to prove
+                revenue certainty to your future investors.
+              </p>
+            </div>
           </div>
         </div>
       </section>
