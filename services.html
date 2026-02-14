@@ -13,6 +13,20 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-W6XNDGC5");
+    </script>
+    <!-- End Google Tag Manager -->
     <style>
       body {
         font-family: "Merriweather", Georgia, serif;
@@ -57,6 +71,16 @@
     <script src="main.js"></script>
   </head>
   <body class="bg-slate-50 text-gray-800">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-W6XNDGC5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header Section -->
     <header class="bg-green-100 shadow-sm py-2">
       <div class="container mx-auto px-4 flex justify-between items-center">
@@ -608,6 +632,21 @@
             console.log("✅ Active page found:", linkHref);
           }
         });
+      });
+    </script>
+
+    <!-- Form Submission Tracking -->
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        // Push form submission event to dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "form_submission",
+          formName: "Contact Form",
+          formLocation: window.location.pathname,
+        });
+
+        console.log("Form submission tracked!");
       });
     </script>
   </body>
