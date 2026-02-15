@@ -3,28 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- SEO Meta Tags -->
-    <title>RapidRise Advisory | Commercial Strategy & Project Finance for Deep Tech</title>
-    <meta name="description" content="Bridging engineering and institutional capital for energy transition and sovereign technology. Expert commercial structuring and project finance for TRL 7-9 ventures." />
-    <meta name="keywords" content="project finance, infrastructure advisory, energy transition, sovereign technology, commercial strategy, deep tech, TRL 7-9, institutional capital" />
+    <title>
+      RapidRise Advisory | Commercial Strategy & Project Finance for Deep Tech
+    </title>
+    <meta
+      name="description"
+      content="Bridging engineering and institutional capital for energy transition and sovereign technology. Expert commercial structuring and project finance for TRL 7-9 ventures."
+    />
+    <meta
+      name="keywords"
+      content="project finance, infrastructure advisory, energy transition, sovereign technology, commercial strategy, deep tech, TRL 7-9, institutional capital"
+    />
     <meta name="author" content="RapidRise Advisory" />
-    
+
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.rapidriseadvisory.com/" />
-    <meta property="og:title" content="RapidRise Advisory | Commercial Strategy for Deep Tech" />
-    <meta property="og:description" content="Bridging engineering and institutional capital for energy transition and sovereign technology ventures." />
+    <meta
+      property="og:title"
+      content="RapidRise Advisory | Commercial Strategy for Deep Tech"
+    />
+    <meta
+      property="og:description"
+      content="Bridging engineering and institutional capital for energy transition and sovereign technology ventures."
+    />
     <meta property="og:site_name" content="RapidRise Advisory" />
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RapidRise Advisory | Commercial Strategy for Deep Tech" />
-    <meta name="twitter:description" content="Bridging engineering and institutional capital for energy transition and sovereign technology ventures." />
-    
+    <meta
+      name="twitter:title"
+      content="RapidRise Advisory | Commercial Strategy for Deep Tech"
+    />
+    <meta
+      name="twitter:description"
+      content="Bridging engineering and institutional capital for energy transition and sovereign technology ventures."
+    />
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.rapidriseadvisory.com/" />
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter Font -->
@@ -48,43 +68,54 @@
       })(window, document, "script", "dataLayer", "GTM-W6XNDGC5");
     </script>
     <!-- End Google Tag Manager -->
-    
+
     <!-- Schema Markup - Organization & Website -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "RapidRise Advisory",
-      "description": "Commercial Strategy and Project Finance for Energy Transition and Sovereign Technology",
-      "url": "https://www.rapidriseadvisory.com",
-      "logo": "https://www.rapidriseadvisory.com/images/Gemini_Generated_Image_93x1f093x1f093x1.jpg",
-      "founder": {
-        "@type": "Person",
-        "name": "Daniel Kalyan"
-      },
-      "areaServed": ["United Kingdom", "Europe"],
-      "serviceType": ["Commercial Strategy", "Project Finance", "Infrastructure Advisory", "Capital Readiness"],
-      "knowsAbout": ["Energy Transition", "Sovereign Technology", "Defense Procurement", "Marine Energy", "Infrastructure Finance"],
-      "sameAs": [
-        "https://www.rapidrise.io"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "RapidRise Advisory",
+        "description": "Commercial Strategy and Project Finance for Energy Transition and Sovereign Technology",
+        "url": "https://www.rapidriseadvisory.com",
+        "logo": "https://www.rapidriseadvisory.com/images/Gemini_Generated_Image_93x1f093x1f093x1.jpg",
+        "founder": {
+          "@type": "Person",
+          "name": "Daniel Kalyan"
+        },
+        "areaServed": ["United Kingdom", "Europe"],
+        "serviceType": [
+          "Commercial Strategy",
+          "Project Finance",
+          "Infrastructure Advisory",
+          "Capital Readiness"
+        ],
+        "knowsAbout": [
+          "Energy Transition",
+          "Sovereign Technology",
+          "Defense Procurement",
+          "Marine Energy",
+          "Infrastructure Finance"
+        ],
+        "sameAs": ["https://www.rapidrise.io"]
+      }
     </script>
-    
+
     <!-- Schema Markup - Breadcrumb -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.rapidriseadvisory.com/"
-      }]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.rapidriseadvisory.com/"
+          }
+        ]
+      }
     </script>
-    
+
     <style>
       body {
         font-family: "Merriweather", Georgia, serif;
@@ -152,7 +183,9 @@
             >RapidRise Advisory</span
           >
         </a>
-        <nav class="flex items-center space-x-2">
+        
+        <!-- Desktop Navigation (hidden on mobile) -->
+        <nav class="hidden md:flex items-center space-x-2">
           <a
             href="index.html"
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300"
@@ -179,7 +212,62 @@
             >Contact Us</a
           >
         </nav>
+        
+        <!-- Mobile Menu Button (visible only on mobile) -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-600 hover:text-green-700 focus:outline-none focus:text-green-700"
+          aria-label="Toggle menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
       </div>
+      
+      <!-- Mobile Navigation Menu (hidden by default) -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-green-50 border-t border-green-200 mt-2"
+      >
+        <div class="container mx-auto px-4 py-4 flex flex-col space-y-2">
+          <a
+            href="index.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+            >Services</a
+          >
+          <a
+            href="about.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+            >About</a
+          >
+          <a
+            href="faq.html"
+            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+            >FAQ</a
+          >
+          <a
+            href="#contact"
+            class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300 block text-center"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
     </header>
 
     <main class="py-12">
@@ -535,6 +623,28 @@
             console.log("✅ Active page found:", linkHref);
           }
         });
+      });
+    </script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+          });
+          
+          // Close mobile menu when clicking on a link
+          const mobileLinks = mobileMenu.querySelectorAll("a");
+          mobileLinks.forEach(link => {
+            link.addEventListener("click", function () {
+              mobileMenu.classList.add("hidden");
+            });
+          });
+        }
       });
     </script>
 
