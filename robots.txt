@@ -1,0 +1,16 @@
+# robots.txt for RapidRise Advisory
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Sitemap location (update this URL to your actual domain)
+Sitemap: https://www.rapidriseadvisory.com/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+# Crawl-delay: 1
+
+# Disallow specific paths if needed (examples below - uncomment if needed)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
