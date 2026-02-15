@@ -25,10 +25,11 @@
 
 # BEGIN Content Policy
 
+# Allow search engines to index the site
 User-agent: *
-Content-Signal: search=yes,ai-train=no
 Allow: /
 
+# Block AI training bots
 User-agent: Amazonbot
 Disallow: /
 
