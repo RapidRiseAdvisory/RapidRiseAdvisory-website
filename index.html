@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
-    <title>
-      RapidRise Advisory | Commercial Strategy & Project Finance for Deep Tech
-    </title>
+    <title>RapidRise Advisory | Estate Infrastructure, Defence Technology Licensing, and Deep Tech Advisory</title>
     <meta
       name="description"
-      content="Bridging engineering and institutional capital for energy transition and sovereign technology. Expert commercial structuring and project finance for TRL 7-9 ventures."
+      content="RapidRise Advisory helps major UK retailers, logistics operators, property REITs, and institutional landowners commercialise their estate infrastructure, and works with European drone manufacturers on autonomous systems architecture licensing under European Patent EP26025008.9."
     />
     <meta
       name="keywords"
-      content="project finance, infrastructure advisory, energy transition, sovereign technology, commercial strategy, deep tech, TRL 7-9, institutional capital"
+      content="estate infrastructure, solar canopy, battery storage, defence technology, autonomous systems, drone patent, deep tech, commercial property, energy generation"
     />
     <meta name="author" content="RapidRise Advisory" />
 
@@ -23,11 +21,11 @@
     <meta property="og:url" content="https://www.rapidriseadvisory.com/" />
     <meta
       property="og:title"
-      content="RapidRise Advisory | Commercial Strategy for Deep Tech"
+      content="RapidRise Advisory | Estate Infrastructure & Defence Technology Licensing"
     />
     <meta
       property="og:description"
-      content="Bridging engineering and institutional capital for energy transition and sovereign technology ventures."
+      content="RapidRise Advisory helps major UK retailers, logistics operators, property REITs, and institutional landowners commercialise their estate infrastructure."
     />
     <meta property="og:site_name" content="RapidRise Advisory" />
 
@@ -95,8 +93,7 @@
           "Defense Procurement",
           "Marine Energy",
           "Infrastructure Finance"
-        ],
-        "sameAs": ["https://www.rapidrise.io"]
+        ]
       }
     </script>
 
@@ -191,11 +188,38 @@
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300"
             >Home</a
           >
-          <a
-            href="services.html"
-            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300"
-            >Services</a
-          >
+          
+          <!-- Services Dropdown -->
+          <div class="relative">
+            <button
+              id="services-dropdown-btn"
+              onclick="toggleServicesDropdown()"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 flex items-center"
+            >
+              Services
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="services-dropdown" class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 hidden z-50">
+              <a
+                href="estate-infrastructure-advisory.html"
+                class="block px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition duration-300"
+                >Estate Infrastructure Advisory</a
+              >
+              <a
+                href="autonomous-systems.html"
+                class="block px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition duration-300"
+                >Autonomous Systems Architecture</a
+              >
+              <a
+                href="deep-tech-commercialisation.html"
+                class="block px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition duration-300"
+                >Deep Tech Commercialisation</a
+              >
+            </div>
+          </div>
+          
           <a
             href="about.html"
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300"
@@ -246,11 +270,27 @@
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
             >Home</a
           >
-          <a
-            href="services.html"
-            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
-            >Services</a
-          >
+          
+          <!-- Services Submenu -->
+          <div class="pl-4 space-y-2">
+            <p class="text-sm font-semibold text-gray-700 px-3 py-1">Services:</p>
+            <a
+              href="estate-infrastructure-advisory.html"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+              >Estate Infrastructure Advisory</a
+            >
+            <a
+              href="autonomous-systems.html"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+              >Autonomous Systems Architecture</a
+            >
+            <a
+              href="deep-tech-commercialisation.html"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+              >Deep Tech Commercialisation</a
+            >
+          </div>
+          
           <a
             href="about.html"
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
@@ -281,20 +321,11 @@
         <div class="absolute inset-0 bg-black bg-opacity-20"></div>
         <div class="container mx-auto px-4 relative z-10">
           <h1 class="text-5xl font-bold text-slate-100 mb-4">
-            Bridging Engineering and Institutional Capital.
+            Your estate is already an energy asset. Most operators have not priced it that way.
           </h1>
-          <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-semibold">
-            Commercial Strategy and Project Finance for Energy Transition and
-            Sovereign Technology.
+          <p class="text-xl text-gray-200 mb-8 max-w-3xl mx-auto font-semibold">
+            RapidRise Advisory works with major UK retailers, logistics operators, petrol forecourt networks, property REITs, and institutional landowners to assess, structure, and commercialise on-site energy generation, battery storage, and demand flexibility across large commercial property portfolios.
           </p>
-          <div class="max-w-3xl mx-auto mb-6">
-            <p class="text-lg text-white mb-4">
-              I partner with founders of critical infrastructure and deep
-              technology ventures at TRL 7 to 9. I help structure commercial
-              agreements and secure institutional capital required to move from
-              pilot projects to full scale deployment.
-            </p>
-          </div>
           <a
             href="#contact"
             class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition duration-300 transform hover:scale-105"
@@ -304,166 +335,79 @@
         </div>
       </section>
 
-      <!-- What We Do Section -->
+      <!-- The Estate Infrastructure Opportunity Section -->
       <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 max-w-5xl">
           <h2 class="text-4xl font-bold text-green-700 text-center mb-12">
-            Critical Infrastructure & Hard Tech
+            The Estate Infrastructure Opportunity
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Commercial Structuring -->
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border-2 border-green-100 hover:border-green-300 transition duration-300"
-            >
-              <h3 class="text-2xl font-bold text-slate-800 mb-4">
-                Commercial Structuring
-              </h3>
-              <p class="text-gray-600 leading-relaxed">
-                Drafting and negotiating Power Purchase Agreements, joint
-                ventures, and long term offtake structures that make projects
-                bankable.
-              </p>
-            </div>
-
-            <!-- Capital Access -->
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border-2 border-green-100 hover:border-green-300 transition duration-300"
-            >
-              <h3 class="text-2xl font-bold text-slate-800 mb-4">
-                Capital Access
-              </h3>
-              <p class="text-gray-600 leading-relaxed">
-                Connecting infrastructure founders with a long standing network
-                of asset managers and institutional investors seeking energy
-                transition and sovereign assets.
-              </p>
-            </div>
-
-            <!-- Sovereign and Government Sales -->
-            <div
-              class="bg-white p-8 rounded-lg shadow-lg border-2 border-green-100 hover:border-green-300 transition duration-300"
-            >
-              <h3 class="text-2xl font-bold text-slate-800 mb-4">
-                Sovereign and Government Sales
-              </h3>
-              <p class="text-gray-600 leading-relaxed">
-                Positioning British and European technology as strategic
-                capability to win defence and government contracts.
-              </p>
-            </div>
+          
+          <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              Large commercial estates, distribution centres, car parks, and logistics hubs now qualify as de facto energy infrastructure under recent UK planning reform. The Class OA permitted development rights introduced in December 2023 allow solar canopies on non-domestic off-street parking subject to prior approval, materially improving planning viability for large retail and logistics estates. Most property teams have not yet fully absorbed what this means for asset value and operating cost.
+            </p>
+            
+            <p>
+              The UK grid faces a material capacity reduction as EDF's remaining Advanced Gas-Cooled Reactor stations close. Hartlepool and Heysham 1 are scheduled to cease generation in March 2028. Heysham 2 and Torness are expected to follow in March 2030. Operators with significant electricity demand and the physical footprint to generate, store, and flex their own supply have a closing window to act ahead of that constraint.
+            </p>
+            
+            <p>
+              The businesses best placed to capture this opportunity are those that already own or control their logistics and distribution infrastructure, carry large and predictable electricity loads across food retail, refrigeration, or manufacturing operations, and have the estate scale to justify a serious review of on-site generation, battery storage, and demand flexibility as a revenue and resilience strategy rather than a symbolic sustainability gesture.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- How I Work Section -->
+      <!-- Who We Work With Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-5xl">
+          <h2 class="text-4xl font-bold text-green-700 text-center mb-8">
+            Who We Work With
+          </h2>
+          
+          <div class="text-lg text-gray-700 leading-relaxed">
+            <p>
+              We work with major UK grocery and general merchandise retailers, petrol forecourt operators and fuel distribution networks, logistics and distribution centre operators, property REITs and institutional estate holders including organisations such as Landsec, British Land, and the Crown Estate, and infrastructure operators including Network Rail and local authority property portfolios.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How an Engagement Works Section -->
       <section class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-5xl">
-          <h2
-            class="text-3xl md:text-4xl font-bold text-green-700 text-center mb-4"
-          >
-            How I Work
+          <h2 class="text-4xl font-bold text-green-700 text-center mb-12">
+            How an Engagement Works
           </h2>
-          <p
-            class="text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
-          >
-            I turn pilots into bankable projects by aligning contracts, capital,
-            and risk requirements.
-          </p>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Commercial Reality Check -->
-            <div
-              class="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-lg shadow-lg border-l-4 border-green-600"
-            >
-              <div class="mb-4">
-                <div
-                  class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4"
-                >
-                  <svg
-                    class="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mb-3">
-                  Commercial Reality Check
-                </h3>
-              </div>
-              <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-                What exactly must be true for this to be financeable and
-                contractable at scale.
+            <!-- Commercial Architecture Review -->
+            <div class="bg-gradient-to-br from-slate-50 to-white p-8 rounded-lg shadow-lg border-l-4 border-green-600">
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                Commercial Architecture Review
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                A tightly scoped diagnostic of selected assets, deliverable within weeks. We establish what the estate could realistically generate, store, and flex, and what that is worth in revenue, resilience, and carbon reduction terms. This is the fixed-fee entry point for every engagement.
               </p>
             </div>
 
-            <!-- Contract Architecture -->
-            <div
-              class="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-lg shadow-lg border-l-4 border-green-600"
-            >
-              <div class="mb-4">
-                <div
-                  class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4"
-                >
-                  <svg
-                    class="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mb-3">
-                  Contract Architecture
-                </h3>
-              </div>
-              <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-                Power purchase agreements, offtake, joint ventures, and
-                counterparties. The aim is bankability, not just intent.
+            <!-- Structuring and Negotiation -->
+            <div class="bg-gradient-to-br from-slate-50 to-white p-8 rounded-lg shadow-lg border-l-4 border-green-600">
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                Structuring and Negotiation
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Once the opportunity is defined, we structure the commercial arrangements required to act on it. This includes Power Purchase Agreements, grid export arrangements, joint venture frameworks, and demand flexibility contracts that make the project credible to your board and to any external capital partners.
               </p>
             </div>
 
-            <!-- Capital Readiness -->
-            <div
-              class="bg-gradient-to-br from-slate-50 to-white p-6 md:p-8 rounded-lg shadow-lg border-l-4 border-green-600"
-            >
-              <div class="mb-4">
-                <div
-                  class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4"
-                >
-                  <svg
-                    class="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 class="text-xl md:text-2xl font-bold text-slate-800 mb-3">
-                  Capital Readiness
-                </h3>
-              </div>
-              <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-                I translate the story into what institutional investors and
-                lenders need to underwrite.
+            <!-- Capital and Partnership Readiness -->
+            <div class="bg-gradient-to-br from-slate-50 to-white p-8 rounded-lg shadow-lg border-l-4 border-green-600">
+              <h3 class="text-2xl font-bold text-slate-800 mb-4">
+                Capital and Partnership Readiness
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Where project scale warrants it, we connect estate owners with infrastructure funds, energy investors, and development partners seeking long-term, asset-backed, revenue-generating infrastructure opportunities within large commercial property portfolios.
               </p>
             </div>
           </div>
@@ -474,41 +418,12 @@
       <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 max-w-4xl">
           <h2 class="text-4xl font-bold text-green-700 text-center mb-8">
-            A Bridge to the Buy Side
+            About Daniel Lee Knight
           </h2>
-          <div
-            class="bg-white p-8 md:p-12 rounded-lg shadow-lg border-2 border-green-100"
-          >
-            <p class="text-xl text-gray-700 mb-6 leading-relaxed">
-              The constraint on scaling marine energy or sovereign technology is
-              rarely engineering. It is commercial viability.
+          <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg border-2 border-green-100">
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Daniel Lee Knight is the Founder and Principal Revenue Architect of RapidRise Advisory. He brings over 25 years of experience selling complex analytical platforms and data infrastructure to institutional buyers across capital markets, energy, and defence, including seven years at S&P Global and IHS Markit. He understands how large operators make capital allocation decisions, how property and operations teams assess strategic risk, and how to structure a commercial thesis that lands with a CFO or an estates board. RapidRise Advisory operates across three practice areas: estate infrastructure and energy advisory for major UK landowners and operators, autonomous systems architecture and defence technology licensing under European Patent EP26025008.9, and deep tech commercialisation for founders at TRL 7 to 9.
             </p>
-            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-              Daniel Lee Knight brings over 25 years of experience working with
-              institutional capital markets. By understanding exactly what asset
-              managers, lenders, and risk officers require, he helps industrial
-              founders structure businesses that can secure funding and long
-              term contracts.
-            </p>
-            <div class="border-t-2 border-green-100 pt-6 mb-6">
-              <h3 class="text-xl font-bold text-slate-800 mb-3">
-                Current Strategic Role:
-              </h3>
-              <p class="text-lg text-gray-600">
-                Commercial lead for risk commercialisation at Tenokonda Risk.
-              </p>
-            </div>
-            <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-green-600">
-              <p class="text-gray-600">
-                <strong>Cross Reference:</strong> For SaaS, AI, and revenue
-                operations work, visit
-                <a
-                  href="https://www.rapidrise.io"
-                  class="text-green-600 hover:text-green-700 font-semibold transition duration-300"
-                  >RapidRise.io</a
-                >.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -524,6 +439,19 @@
             and secure institutional capital for your energy transition or
             sovereign technology project.
           </p>
+          
+          <!-- Calendly Booking Widget -->
+          <div class="mb-8">
+            <a
+              href="https://calendly.com"
+              target="_blank"
+              class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg mb-4"
+            >
+              Book a 20-Minute Introduction Call
+            </a>
+            <p class="text-sm text-gray-500">Or complete the form below</p>
+          </div>
+          
           <form
             action="https://formspree.io/f/manpnbqe"
             method="POST"
@@ -562,19 +490,22 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-gray-400 py-8">
+    <footer class="bg-gray-900 text-gray-300 py-8">
       <div class="container mx-auto px-4 text-center">
-        <p>
-          &copy; <span id="current-year">2025</span> RapidRise Advisory. All
-          rights reserved.
+        <p class="text-lg font-semibold text-white mb-2">Daniel Lee Knight</p>
+        <p class="text-sm mb-1">Founder and Principal Revenue Architect, RapidRise Advisory</p>
+        <p class="text-sm mb-1">
+          <a href="mailto:daniel@rapidrise.io" class="text-green-400 hover:text-green-300 transition duration-300">daniel@rapidrise.io</a>
         </p>
-        <p class="text-sm text-gray-500 mt-3">
-          Looking for SaaS and Revenue Operations? Visit
-          <a
-            href="https://www.rapidrise.io"
-            class="text-green-400 hover:text-green-300 transition duration-300"
-            >RapidRise.io</a
-          >
+        <p class="text-sm mb-1">+44 (0)7766 821 555</p>
+        <p class="text-sm mb-1">
+          <a href="https://linkedin.com/in/daniel-lee-knight" target="_blank" class="text-green-400 hover:text-green-300 transition duration-300">linkedin.com/in/daniel-lee-knight</a>
+        </p>
+        <p class="text-sm mb-4">
+          <a href="https://www.rapidriseadvisory.com" class="text-green-400 hover:text-green-300 transition duration-300">rapidriseadvisory.com</a>
+        </p>
+        <p class="text-sm text-gray-500">
+          &copy; <span id="current-year">2026</span> RapidRise Advisory. All rights reserved.
         </p>
       </div>
     </footer>
@@ -644,6 +575,24 @@
               mobileMenu.classList.add("hidden");
             });
           });
+        }
+      });
+    </script>
+
+    <!-- Services Dropdown Toggle Script -->
+    <script>
+      function toggleServicesDropdown() {
+        const dropdown = document.getElementById('services-dropdown');
+        dropdown.classList.toggle('hidden');
+      }
+      
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('services-dropdown');
+        const button = document.getElementById('services-dropdown-btn');
+        
+        if (dropdown && button && !button.contains(event.target) && !dropdown.contains(event.target)) {
+          dropdown.classList.add('hidden');
         }
       });
     </script>

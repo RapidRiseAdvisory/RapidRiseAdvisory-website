@@ -194,11 +194,38 @@
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300"
             >Home</a
           >
-          <a
-            href="services.html"
-            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300"
-            >Services</a
-          >
+          
+          <!-- Services Dropdown -->
+          <div class="relative">
+            <button
+              id="services-dropdown-btn"
+              onclick="toggleServicesDropdown()"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 flex items-center"
+            >
+              Services
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="services-dropdown" class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 hidden z-50">
+              <a
+                href="estate-infrastructure-advisory.html"
+                class="block px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition duration-300"
+                >Estate Infrastructure Advisory</a
+              >
+              <a
+                href="autonomous-systems.html"
+                class="block px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition duration-300"
+                >Autonomous Systems Architecture</a
+              >
+              <a
+                href="deep-tech-commercialisation.html"
+                class="block px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition duration-300"
+                >Deep Tech Commercialisation</a
+              >
+            </div>
+          </div>
+          
           <a
             href="about.html"
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300"
@@ -249,11 +276,27 @@
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
             >Home</a
           >
-          <a
-            href="services.html"
-            class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
-            >Services</a
-          >
+          
+          <!-- Services Submenu -->
+          <div class="pl-4 space-y-2">
+            <p class="text-sm font-semibold text-gray-700 px-3 py-1">Services:</p>
+            <a
+              href="estate-infrastructure-advisory.html"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+              >Estate Infrastructure Advisory</a
+            >
+            <a
+              href="autonomous-systems.html"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+              >Autonomous Systems Architecture</a
+            >
+            <a
+              href="deep-tech-commercialisation.html"
+              class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
+              >Deep Tech Commercialisation</a
+            >
+          </div>
+          
           <a
             href="about.html"
             class="nav-link text-gray-600 hover:text-green-700 px-3 py-2 rounded-lg transition duration-300 block"
@@ -399,14 +442,6 @@
           &copy; <span id="current-year">2025</span> RapidRise Advisory. All
           rights reserved.
         </p>
-        <p class="text-sm text-gray-500 mt-3">
-          Looking for SaaS and Revenue Operations? Visit
-          <a
-            href="https://www.rapidrise.io"
-            class="text-green-400 hover:text-green-300 transition duration-300"
-            >RapidRise.io</a
-          >
-        </p>
       </div>
     </footer>
 
@@ -475,6 +510,24 @@
               mobileMenu.classList.add("hidden");
             });
           });
+        }
+      });
+    </script>
+
+    <!-- Services Dropdown Toggle Script -->
+    <script>
+      function toggleServicesDropdown() {
+        const dropdown = document.getElementById('services-dropdown');
+        dropdown.classList.toggle('hidden');
+      }
+      
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('services-dropdown');
+        const button = document.getElementById('services-dropdown-btn');
+        
+        if (dropdown && button && !button.contains(event.target) && !dropdown.contains(event.target)) {
+          dropdown.classList.add('hidden');
         }
       });
     </script>
